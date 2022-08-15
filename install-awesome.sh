@@ -18,7 +18,7 @@ mving ()
   cp -r $HOME/.clones/nixos-awesome/neofetch $HOME/.config/
   cp -r $HOME/.clones/nixos-awesome/.zprofile $HOME
   cp -r $HOME/.clones/nixos-awesome/themes-wm $HOME
-  cp -r $HOME/.clones/nixos-awesome/"#FILENAMEHOLDER" $HOME
+  cp -r $HOME/.clones/nixos-awesome/Passwords-1.kdbx $HOME
 
   # DIR="$HOME/.local/share/fonts"
   if [ -d "$DIR" ]; then
