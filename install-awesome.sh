@@ -20,11 +20,16 @@ mving ()
   cp -r $HOME/.clones/nixos-awesome/themes-wm $HOME
   cp -r $HOME/.clones/nixos-awesome/Passwords-1.kdbx $HOME
 
-  # DIR="$HOME/.local/share/fonts"
-  if [ -d "$DIR" ]; then
+  if [ -d "$HOME/.local/share/fonts" ]; then
     cp -r $HOME/.clones/nixos-awesome/fonts/* $HOME/.local/share/fonts
   else
     cp -r $HOME/.clones/nixos-awesome/fonts/ $HOME/.local/share/
+  fi
+  if [ -d "$HOME/.local/share/bin" ]; then
+    cp -r $HOME/.clones/bin/* $HOME/.local/bin
+  else
+    mkdir ~/.local/bin
+    cp -r $HOME/.clones/nixos-awesome/bin/* $HOME/.local/bin/
   fi
 } 
 
